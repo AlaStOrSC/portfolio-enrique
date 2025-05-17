@@ -7,16 +7,16 @@ const Home = () => {
 
   const content = {
     es: {
-      greeting: 'Hola, mi nombre es Enrique Macias.',
+      greeting: 'Hola, me llamo Enrique Macias.',
       title: 'Construyo proyectos Full-Stack.',
-      description: 'Soy un desarrollador web, especializado en JS y React. Actualmente estoy centrado tanto en la creación/gestión de proyectos para mi empresa como en otro tipo de proyectos personales.',
+      description: 'Soy un desarrollador web especializado en JS y React. Actualmente estoy centrado tanto en la creación/gestión de proyectos para mi empresa como en otro tipo de proyectos personales.',
       button: '¡Mira mis proyectos!',
     },
     en: {
       greeting: 'Hello, my name is Enrique Macias.',
       title: 'I build Full-Stack projects.',
-      description: "I'm a web developer specializing in React and JS. Currently, I'm focused on creating and managing projects for my business, as well as other personal projects.",
-      button: 'Check Out My Projects!',
+      description: "I'm a web developer specializing in React and JS. Currently, i'm focused on creating and managing projects for my business, as well as other personal projects.",
+      button: 'Check out my projects!',
     },
   };
 
