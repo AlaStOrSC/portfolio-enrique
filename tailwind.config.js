@@ -27,6 +27,9 @@ export default {
       fontFamily: {
         sans: ['Inter', 'sans-serif'], // Mantenemos la fuente
       },
+      fontSize: {
+        'custom-mobile-greeting': '33.6px', // Tamaño personalizado para el 30% de reducción en móvil
+      },
     },
   },
   plugins: [],
