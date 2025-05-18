@@ -7,11 +7,11 @@ const AboutMe = () => {
   const content = {
     es: {
       title: 'Sobre mí',
-      description: 'Soy un desarrollador full stack, con especialidad en el pack "MERN", pero siempre estoy actualizándome y aprendiendo nuevas tecnologías poniéndolas en práctica en proyectos personales. Actualmente estoy centrado en llevar a cabo las tareas relacionadas con IT en mi empresa personal, un negocio de hostelería situado en Chiclana, he creado aplicaciones de gestión de tareas y empleados, donde he puesto en práctica todos mis conocimientos sobre el backend, además de tener en desarrollo la web oficial, donde estoy centrado en el diseño y en la optimización del frontend.',
+      description: 'Soy un desarrollador full stack especializado en el stack MERN, siempre aprendiendo nuevas tecnologías y aplicándolas en proyectos personales. Actualmente, gestiono tareas de IT en mi empresa de hostelería en Chiclana, donde he desarrollado aplicaciones para la gestión de tareas y empleados, enfocándome en el backend. También estoy creando la web oficial, priorizando el diseño y la optimización del frontend.',
     },
     en: {
       title: 'About Me',
-      description: "I'm a Full-Stack developer with a specialization in the MERN stack, though I'm always keeping up with the latest technologies and applying them in personal projects to expand my skills. Currently, I'm focused on handling IT-related tasks for my own business—a hospitality company based in Chiclana. I've developed task and employee management applications, putting my backend expertise to work, while also working on the official website, where I'm concentrating on design and frontend optimization.",
+      description: "I am a full stack developer specialized in the MERN stack, always learning new technologies and applying them in personal projects. Currently, I manage IT tasks for my hospitality business in Chiclana, where I have developed applications for task and employee management, focusing on the backend. I am also creating the official website, prioritizing frontend design and optimization.",
     },
   };
 
