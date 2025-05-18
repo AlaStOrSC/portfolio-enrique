@@ -26,9 +26,9 @@ const Projects = () => {
         },
         {
           img: magicShopImage,
-          title: 'Magic Shop',
-          description: 'Uno de mis primeros proyectos, utilizando exclusivamente CSS y HTML a nivel avanzado.',
-          detailedDescription: 'Magic Shop fue un ejercicio de maquetación avanzada donde me enfoqué en crear animaciones fluidas y un diseño visualmente atractivo solo con HTML y CSS. El reto principal fue asegurar que el diseño fuera responsive y que las animaciones funcionaran bien en todos los navegadores, lo que me obligó a profundizar en las técnicas de CSS como flexbox y grid.',
+          title: 'Mirror of Kalandra',
+          description: 'Uno de mis primeros proyectos, utilizando exclusivamente CSS y HTML a nivel avanzado, fue un proyecto divertido, donde di rienda suelta a mi creatividad y lo combine con estilos inspirados en Harry Potter.',
+          detailedDescription: 'Mirror of Kalandra fue un ejercicio de maquetación avanzada donde me enfoqué en crear animaciones fluidas y un diseño visualmente atractivo solo con HTML y CSS. El reto principal fue asegurar que el diseño fuera responsive y que las animaciones funcionaran bien en todos los navegadores, lo que me obligó a profundizar en las técnicas de CSS como flexbox y grid.',
           technologies: ['HTML', 'CSS'],
           linkB: 'https://mirrorofkalandrafinal.netlify.app/home',
           linkTextB: 'icono representando una web',
@@ -38,7 +38,7 @@ const Projects = () => {
         {
           img: portfolioImage,
           title: 'Portfolio Personal',
-          description: 'Mi portfolio personal, diseñado con un enfoque moderno y responsive.',
+          description: 'Mi portfolio personal, diseñado con un enfoque moderno y responsive, donde podreis ver y saber un poco mas de mi como desarrollador ademas de comprobar mis habilidades tecnicas.',
           detailedDescription: 'Mi portfolio personal fue un proyecto donde puse en práctica mis habilidades en React y TailwindCSS. Uno de los retos fue implementar un sistema de internacionalización (i18n) para cambiar entre español e inglés, además de crear un diseño responsive y moderno con gradientes personalizados.',
           technologies: ['React', 'Vite', 'TailwindCSS', 'Redux'],
           linkB: '#',
@@ -64,9 +64,9 @@ const Projects = () => {
         },
         {
           img: magicShopImage,
-          title: 'Magic Shop',
-          description: 'One of my first projects, using advanced CSS and HTML exclusively.',
-          detailedDescription: 'Magic Shop was an advanced layout exercise where I focused on creating smooth animations and a visually appealing design using only HTML and CSS. The main challenge was ensuring the design was responsive and that the animations worked well across all browsers, which required diving deep into CSS techniques like flexbox and grid.',
+          title: 'Mirror of Kalandra',
+          description: 'One of my first projects, using only advanced CSS and HTML, was a fun project where I unleashed my creativity and combined it with styles inspired by Harry Potter.',
+          detailedDescription: 'Mirror of Kalandra was an advanced layout exercise where I focused on creating smooth animations and a visually appealing design using only HTML and CSS. The main challenge was ensuring the design was responsive and that the animations worked well across all browsers, which required diving deep into CSS techniques like flexbox and grid.',
           technologies: ['HTML', 'CSS'],
           linkB: 'https://mirrorofkalandrafinal.netlify.app/home',
           linkTextB: 'Website Icon',
@@ -76,7 +76,7 @@ const Projects = () => {
         {
           img: portfolioImage,
           title: 'Personal Portfolio',
-          description: 'My personal portfolio, designed with a modern and responsive approach.',
+          description: 'My personal portfolio, designed with a modern and responsive approach, where you can see and learn a bit more about me as a developer, as well as check out my technical skills.',
           detailedDescription: 'My personal portfolio was a project where I applied my skills in React and TailwindCSS. One of the challenges was implementing an internationalization (i18n) system to switch between Spanish and English, as well as creating a responsive and modern design with custom gradients.',
           technologies: ['React', 'Vite', 'TailwindCSS', 'Redux'],
           linkB: '#',

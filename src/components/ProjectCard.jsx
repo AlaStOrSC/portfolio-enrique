@@ -1,9 +1,22 @@
 import { useState } from 'react';
 import { FiExternalLink } from 'react-icons/fi';
 import { FaGithub } from 'react-icons/fa';
+import { useSelector } from 'react-redux';
 
 const ProjectCard = ({ img, title, description, technologies, linkB, linkTextB, linkF, linkTextF, linkG, linkTextG, detailedDescription }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const lang = useSelector((state) => state.language.lang);
+
+  const content = {
+    es: {
+      button: 'Ver descripción',
+    },
+    en: {
+      button: 'More Details',
+    },
+  };
+
+  const texts = content[lang];
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
@@ -50,7 +63,7 @@ const ProjectCard = ({ img, title, description, technologies, linkB, linkTextB, 
             onClick={openModal}
             className="px-4 py-2 bg-matching-gradient text-white rounded-lg hover:scale-105 transition-transform mt-auto"
           >
-            Descripción
+            {texts.button}
           </button>
         </div>
       </div>

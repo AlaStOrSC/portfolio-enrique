@@ -7,14 +7,14 @@ const Home = () => {
 
   const content = {
     es: {
-      greeting: 'Hola, me llamo Enrique Macias.',
+      greeting: 'Hola, me llamo Enrique Macías.',
       title: 'Construyo proyectos Full-Stack.',
       description: 'Soy un desarrollador web especializado en JS y React. Actualmente estoy centrado tanto en la creación/gestión de proyectos para mi empresa como en otro tipo de proyectos personales.',
       mobileDescription: 'Desarrollador web especializado en JS y React. Actualmente trabajando en creación y gestión de proyectos para mi empresa.',
       button: '¡Mira mis proyectos!',
     },
     en: {
-      greeting: 'Hello, my name is Enrique Macias.',
+      greeting: 'Hello, my name is Enrique Macías.',
       title: 'I build Full-Stack projects.',
       description: "I'm a web developer specializing in React and JS. Currently, I'm focused on creating and managing projects for my business, as well as other personal projects.",
       mobileDescription: 'Web developer specializing in JS and React. Currently working on creating and managing projects for my business.',
@@ -49,7 +49,7 @@ const Home = () => {
         <div className="flex-shrink-0 order-1 md:order-2">
           <img
             src={profileImage}
-            alt="Enrique Macias Profile"
+            alt="Enrique Macías Profile"
             className="w-32 h-32 md:w-64 md:h-64 rounded-full object-cover shadow-lg mx-auto"
           />
         </div>
