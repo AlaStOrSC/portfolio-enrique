@@ -2,6 +2,26 @@ import { useState } from 'react';
 import { FiExternalLink } from 'react-icons/fi';
 import { FaGithub } from 'react-icons/fa';
 import { useSelector } from 'react-redux';
+import { 
+  DiJavascript1, 
+  DiReact, 
+  DiHtml5, 
+  DiCss3, 
+  DiNodejsSmall, 
+  DiMongodb 
+} from 'react-icons/di';
+import { 
+  SiTailwindcss, 
+  SiVite, 
+  SiExpress, 
+  SiMongodb, 
+  SiAuth0, 
+  SiJsonwebtokens, 
+  SiPostman, 
+  SiRender, 
+  SiVercel, 
+  SiRedux 
+} from 'react-icons/si';
 
 const ProjectCard = ({ img, title, description, technologies, linkB, linkTextB, linkF, linkTextF, linkG, linkTextG, detailedDescription }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -10,13 +30,30 @@ const ProjectCard = ({ img, title, description, technologies, linkB, linkTextB, 
   const content = {
     es: {
       button: 'Ver descripción',
+      skillsLabel: 'Habilidades empleadas',
     },
     en: {
       button: 'More Details',
+      skillsLabel: 'Skills Used',
     },
   };
 
   const texts = content[lang];
+
+  const techIcons = {
+    Javascript: { icon: <DiJavascript1 />, color: '#F7DF1E' },
+    React: { icon: <DiReact />, color: '#61DAFB' },
+    TailwindCSS: { icon: <SiTailwindcss />, color: '#38B2AC' },
+    Vite: { icon: <SiVite />, color: '#646CFF' },
+    HTML: { icon: <DiHtml5 />, color: '#E34F26' },
+    CSS: { icon: <DiCss3 />, color: '#1572B6' },
+    'Node.js': { icon: <DiNodejsSmall />, color: 'red' },
+    Express: { icon: <SiExpress />, color: '#000000' },
+    MongoDB: { icon: <DiMongodb />, color: '#47A248' },
+    Mongoose: { icon: <SiMongodb />, color: '#880000' },
+    JWT: { icon: <SiJsonwebtokens />, color: '#D63AFF' },
+    Redux: { icon: <SiRedux />, color: '#764ABC' },
+  };
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
@@ -32,15 +69,35 @@ const ProjectCard = ({ img, title, description, technologies, linkB, linkTextB, 
         <div className="p-6 flex flex-col flex-grow">
           <h3 className="text-2xl font-semibold mb-3">{title}</h3>
           <p className="text-sm mb-4 flex-grow">{description}</p>
-          <div className="flex flex-wrap gap-2 mb-4">
-            {technologies.map((tech) => (
-              <span
-                key={tech}
-                className="px-3 py-1 bg-white text-primary rounded-full text-xs font-medium"
-              >
-                {tech}
-              </span>
-            ))}
+          <div className="mb-4">
+            <h4 className="text-sm font-semibold mb-2">{texts.skillsLabel}</h4>
+            <div className="flex flex-wrap gap-2">
+              {technologies.map((tech, index) => {
+                const techData = techIcons[tech] || { icon: null, color: '#FFFFFF' };
+                return (
+                  <div
+                    key={index}
+                    className="relative group flex items-center justify-center w-9 h-9"
+                  >
+                    {techData.icon ? (
+                      <div className="text-2xl transition-transform group-hover:scale-110" style={{ color: techData.color, fontSize: '26.4px' }}>
+                        {techData.icon}
+                      </div>
+                    ) : (
+                      <span
+                        className="px-3 py-1 bg-white text-primary rounded-full text-xs font-medium"
+                        style={{ color: techData.color }}
+                      >
+                        {tech}
+                      </span>
+                    )}
+                    <span className="absolute bottom-full mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                      {tech}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
           </div>
           <div className="flex gap-4 mb-4">
             {linkB && (

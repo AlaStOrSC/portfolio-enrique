@@ -85,7 +85,7 @@ const Skills = () => {
             key={index}
             className="relative group flex items-center justify-center w-16 h-16"
           >
-            <div className="text-4xl transition-transform group-hover:scale-110" style={{ color: skill.color }}>
+            <div className="text-4xl transition-transform group-hover:scale-110" style={{ color: skill.color, fontSize: '55px' }}>
               {skill.icon}
             </div>
             <span className="absolute bottom-full mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity">
