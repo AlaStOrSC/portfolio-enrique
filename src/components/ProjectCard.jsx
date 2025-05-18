@@ -30,11 +30,11 @@ const ProjectCard = ({ img, title, description, technologies, linkB, linkTextB, 
   const content = {
     es: {
       button: 'Ver descripción',
-      skillsLabel: 'Habilidades empleadas',
+      skillsLabel: 'Tecnologias empleadas',
     },
     en: {
       button: 'More Details',
-      skillsLabel: 'Skills Used',
+      skillsLabel: 'Technologies Used',
     },
   };
 

@@ -52,7 +52,7 @@ const Projects = () => {
         {
           img: padelSocialImage,
           title: 'Padel Social Network (PSN)',
-          description: 'My most ambitious project, a padel social network where you can also compete in a ranking and make friends at your level!',
+          description: 'My most ambitious project, a padel social network where you can also compete in a ranking and make friends at your level! Friendlist, chat with friends and much more!',
           detailedDescription: 'This project was a major challenge due to the need for secure authentication with JWT and real-time synchronization using WebSocket. I also integrated Nodemailer for sending notification emails and Multer for handling profile image uploads. One of the biggest challenges was optimizing the database with MongoDB and Mongoose to manage a dynamic player ranking, ensuring efficient performance even with a large number of users.',
           technologies: ['Javascript', 'Node.js', 'MongoDB', 'Express', 'Mongoose', 'JWT', 'HTML', 'CSS'],
           linkB: 'https://padel-social-frontend.onrender.com/',

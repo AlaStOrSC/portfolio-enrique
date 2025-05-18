@@ -7,11 +7,11 @@ const AboutMe = () => {
   const content = {
     es: {
       title: 'Sobre mí',
-      description: 'Soy un desarrollador full stack especializado en el stack MERN, siempre aprendiendo nuevas tecnologías y aplicándolas en proyectos personales. Actualmente, gestiono tareas de IT en mi empresa de hostelería en Chiclana, donde he desarrollado aplicaciones para la gestión de tareas y empleados, enfocándome en el backend. También estoy creando la web oficial, priorizando el diseño y la optimización del frontend.',
+      description: '\nSoy un desarrollador full stack especializado en el stack MERN, siempre aprendiendo nuevas tecnologías y aplicándolas en proyectos personales. Actualmente, gestiono tareas de IT en mi empresa de hostelería en Chiclana, donde he desarrollado aplicaciones para la gestión de tareas y empleados, enfocándome en el backend. También estoy creando la web oficial, priorizando el diseño y la optimización del frontend.',
     },
     en: {
       title: 'About Me',
-      description: "I am a full stack developer specialized in the MERN stack, always learning new technologies and applying them in personal projects. Currently, I manage IT tasks for my hospitality business in Chiclana, where I have developed applications for task and employee management, focusing on the backend. I am also creating the official website, prioritizing frontend design and optimization.",
+      description: "\nI am a full stack developer specialized in the MERN stack, always learning new technologies and applying them in personal projects. Currently, I manage IT tasks for my hospitality business in Chiclana, where I have developed applications for task and employee management, focusing on the backend. I am also creating the official website, prioritizing frontend design and optimization.",
     },
   };
 
@@ -27,7 +27,7 @@ const AboutMe = () => {
       <h1 className="text-4xl md:text-5xl font-bold text-text-light dark:text-text-dark mb-6">
         {texts.title}
       </h1>
-      <p className="text-lg md:text-xl text-text-light dark:text-text-dark leading-relaxed">
+      <p className="text-lg md:text-xl text-text-light dark:text-text-dark leading-relaxed whitespace-pre-line">
         {texts.description}
       </p>
     </div>
